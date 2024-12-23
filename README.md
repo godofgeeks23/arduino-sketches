@@ -4,11 +4,11 @@
 ## Useful functions
 
 ```
-setup()
-loop()
+setup() # Setup function
+loop()  # Main
 pinMode(<int>, <int>) # Pin: 13, Mode: OUTPUT
 digitalWrite(<int>, <int>) # Pin: 13, Value: HIGH
-delay(<int>) # Time: 1000
+delay(<int>) # Time: 1000ms
 
 
 ```
