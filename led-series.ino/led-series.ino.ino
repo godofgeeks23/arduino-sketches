@@ -1,4 +1,4 @@
-int delayms = 50;
+int delayms = 200;
 int numLEDs = 6;
 void setup() {
   int ledPin;                          //ledPin will be set to 1,2,3,4,5,6, 7 and 8.
@@ -12,10 +12,7 @@ void loop() {
   {
     digitalWrite(ledPin, HIGH);  //led on
     delay(delayms);              //Delay delayms ms
-  }
-  for (ledPin = 1; ledPin <= 8; ledPin++)  //Every delaymsms off in order LED1 ~ 8
-  {
     digitalWrite(ledPin, LOW);  //led off
-    delay(delayms);             //Delay delayms ms
+    // delay(delayms);             //Delay delayms ms
   }
 }
