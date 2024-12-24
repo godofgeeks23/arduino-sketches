@@ -9,7 +9,6 @@ loop()  # Main
 pinMode(<int>, <int>) # Pin: 13, Mode: OUTPUT
 digitalWrite(<int>, <int>) # Pin: 13, Value: HIGH
 delay(<int>) # Time: 1000ms
-analogRead(<int>) # Pin: A0
 
 
 ```
