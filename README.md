@@ -1,6 +1,5 @@
 # Arduino Programming
 
-
 ## Useful functions
 
 ```
