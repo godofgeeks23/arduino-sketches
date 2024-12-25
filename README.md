@@ -10,7 +10,7 @@ pinMode(<int>, <int>) # Pin: 13, Mode: OUTPUT
 digitalWrite(<int>, <int>) # Pin: 13, Value: HIGH
 delay(<int>) # Time: 1000ms
 Serial.begin(<int>) # Baud rate: 9600
-Serial.available()
+Serial.available() # Check if data is available to read
 Serial.read()
 Serial.println()
 
