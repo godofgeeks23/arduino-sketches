@@ -2,7 +2,7 @@
 
 These sketches were executed on a Arduino UNO model
 
-## Useful functions
+## Useful functions reference
 
 ```
 setup() # Setup function
