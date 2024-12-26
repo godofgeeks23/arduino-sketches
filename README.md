@@ -1,4 +1,4 @@
-# Arduino Programming
+# Arduino Sketches
 
 These sketches were executed on a Arduino UNO model
 
