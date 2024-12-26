@@ -12,4 +12,5 @@ Serial.begin(<int>) # Baud rate: 9600
 Serial.available() # Check if data is available to read
 Serial.read(<int>) # Read data from serial port
 Serial.println(<int>) # Print data to serial port
+
 ```
