@@ -1,4 +1,3 @@
-
 int ledpin = 11; // definition digital 11 pins as pin to control the LED
 
 void setup()
