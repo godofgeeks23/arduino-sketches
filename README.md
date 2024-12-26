@@ -1,5 +1,7 @@
 # Arduino Programming
 
+These sketches were executed on a Arduino UNO model
+
 ## Useful functions
 
 ```
