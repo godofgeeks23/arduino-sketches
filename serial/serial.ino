@@ -9,7 +9,6 @@ void setup()
 void loop()
 {
     char receiveVal; // Defined receive data
-
     if (Serial.available() > 0) // Receive serial data
     {
         receiveVal = Serial.read(); // Save the serial data received
