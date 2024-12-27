@@ -5,6 +5,7 @@ void setup()
     Serial.begin(9600);      // opens serial port, sets data rate to 9600 bps
     pinMode(ledpin, OUTPUT); // Set digital 11 port mode, the OUTPUT for the output
 }
+
 void loop()
 {
     char receiveVal; // Defined receive data
