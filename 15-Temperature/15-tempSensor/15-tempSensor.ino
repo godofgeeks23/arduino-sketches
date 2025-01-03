@@ -1,10 +1,12 @@
 
-void setup() {
-  Serial.begin(9600);                 // Initialize the serial port, set the baud rate into 9600
-  Serial.println("UNO is ready!");    // Print the string "UNO is ready!"
+void setup()
+{
+  Serial.begin(9600);              // Initialize the serial port, set the baud rate into 9600
+  Serial.println("UNO is ready!"); // Print the string "UNO is ready!"
 }
 
-void loop() {
+void loop()
+{
   // Convert analog value of A0 port into digital value
   int adcVal = analogRead(A0);
   // Calculate voltage
@@ -24,4 +26,3 @@ void loop() {
   Serial.println(" C");
   delay(500);
 }
-
