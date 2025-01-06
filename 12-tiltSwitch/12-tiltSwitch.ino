@@ -1,4 +1,3 @@
-
 int ledpin = 11;       // definition digital 11 pins as pin to control the LED
 int tiltSwitchpin = 7; // Set the digital 7 to tilt switch interface
 int val;               // Define variable val
