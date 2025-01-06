@@ -1,4 +1,3 @@
-
 #define trigPin 12       // define TrigPin
 #define echoPin 11       // define EchoPin.
 #define MAX_DISTANCE 200 // Maximum sensor distance is rated at 400-500cm.
