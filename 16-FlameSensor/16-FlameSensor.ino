@@ -1,4 +1,3 @@
-
 const int flameSens = A0; // set flame sensor to pin A0
 const int speaker = 8;    // set speaker to pin 8
 int flameVal;             // set up the data variable for the sensor
