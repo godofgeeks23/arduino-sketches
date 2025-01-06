@@ -1,4 +1,3 @@
-
 #include <IRremote.h>
 
 int RECV_PIN = 11; // The definition of the infrared receiver pin 11
