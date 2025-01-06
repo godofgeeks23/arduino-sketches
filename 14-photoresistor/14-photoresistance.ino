@@ -1,4 +1,3 @@
-
 int convertValue; // Define a variable to save the ADC value
 int ledPin = 9;   // The number of the LED pin
 
