@@ -8,12 +8,16 @@ void loop()
 {
   // Convert analog value of A0 port into digital value
   int adcVal = analogRead(A0);
+  
   // Calculate voltage
   float v = adcVal * 5.0 / 1024;
+
   // Calculate resistance value of thermistor
   float Rt = 10 * v / (5 - v);
+
   // Calculate temperature (Kelvin)
   float tempK = 1 / (log(Rt / 10) / 3950 + 1 / (273.15 + 25));
+
   // Calculate temperature (Celsius)
   float tempC = tempK - 273.15;
 
