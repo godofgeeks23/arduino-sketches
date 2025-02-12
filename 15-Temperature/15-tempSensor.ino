@@ -8,7 +8,7 @@ void loop()
 {
   // Convert analog value of A0 port into digital value
   int adcVal = analogRead(A0);
-  
+
   // Calculate voltage
   float v = adcVal * 5.0 / 1024;
 
