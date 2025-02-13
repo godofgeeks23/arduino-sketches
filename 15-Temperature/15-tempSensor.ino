@@ -24,8 +24,8 @@ void loop()
   // Send the result to computer through serial port
   Serial.print("Current temperature: ");
   Serial.print(tempK);
-  Serial.print(" K, ");
+  Serial.print("K, ");
   Serial.print(tempC);
-  Serial.println(" C");
+  Serial.println("C");
   delay(500);
 }
