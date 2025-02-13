@@ -22,7 +22,7 @@ void loop()
   float tempC = tempK - 273.15;
 
   // Send the result to computer through serial port
-  Serial.print("Current temperature is: ");
+  Serial.print("Current temperature: ");
   Serial.print(tempK);
   Serial.print(" K, ");
   Serial.print(tempC);
