@@ -26,6 +26,6 @@ void loop()
   Serial.print(tempK);
   Serial.print("K, ");
   Serial.print(tempC);
-  Serial.println("C");
+  Serial.println("degC");
   delay(500);
 }
