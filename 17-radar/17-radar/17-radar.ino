@@ -12,12 +12,13 @@ const int delayInterval = 25;
 // set baud rate for the serial communication
 const int serialBaudRate = 9600;
 
+// servo start and end angles in degrees
+const int servoStartAngle = 15;
+const int servoEndAngle = 165;
+
 // Variables for the duration and the distance
 long duration;
 int distance;
-
-const int servoStartAngle = 15;
-const int servoEndAngle = 165;
 
 Servo myServo; // Creates a servo object for controlling the servo motor
 
