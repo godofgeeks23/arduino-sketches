@@ -1,8 +1,10 @@
 import processing.serial.*; // imports library for serial communication
 import java.awt.event.KeyEvent; // imports library for reading the data from the serial port
 import java.io.IOException;
+
 Serial myPort; // defines Object Serial
-// defubes variables
+
+// defines variables
 String angle="";
 String distance="";
 String data="";
@@ -11,7 +13,9 @@ float pixsDistance;
 int iAngle, iDistance;
 int index1=0;
 int index2=0;
+
 PFont orcFont;
+
 void setup() {
   
  size (1200, 700); // ***CHANGE THIS TO YOUR SCREEN RESOLUTION***
