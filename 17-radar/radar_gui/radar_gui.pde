@@ -104,10 +104,10 @@ void drawLine() {
 void drawText() { 
   pushMatrix();
   if(iDistance>40) {
-  noObject = "Out of Range";
+    noObject = "Out of Range";
   }
   else {
-  noObject = "In Range";
+    noObject = "In Range";
   }
   fill(0,0,0);
   noStroke();
