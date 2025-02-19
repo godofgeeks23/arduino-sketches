@@ -22,19 +22,16 @@ int distance;
 
 Servo myServo; // Creates a servo object for controlling the servo motor
 
-void setup()
-{
+void setup() {
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
   pinMode(echoPin, INPUT);  // Sets the echoPin as an Input
   Serial.begin(serialBaudRate);
   myServo.attach(servoPin); // Defines on which pin is the servo motor attached
 }
 
-void loop()
-{
+void loop() {
   // rotates the servo motor from start angle to end angle
-  for (int i = servoStartAngle; i <= servoEndAngle; i++)
-  {
+  for (int i = servoStartAngle; i <= servoEndAngle; i++) {
     myServo.write(i);
     delay(delayInterval);
     distance = calculateDistance(); // Calls a function for calculating the distance measured by the Ultrasonic sensor for each degree
@@ -45,8 +42,7 @@ void loop()
     Serial.print(".");      // Sends addition character right next to the previous value needed later in the Processing IDE for indexing
   }
   // Repeats the previous lines from end angle to start angle
-  for (int i = servoEndAngle; i > servoStartAngle; i--)
-  {
+  for (int i = servoEndAngle; i > servoStartAngle; i--) {
     myServo.write(i);
     delay(delayInterval);
     distance = calculateDistance();
@@ -58,8 +54,7 @@ void loop()
 }
 
 // Function for calculating the distance measured by the Ultrasonic sensor
-int calculateDistance()
-{
+int calculateDistance() {
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
   // Sets the trigPin on HIGH state for 10 micro seconds
