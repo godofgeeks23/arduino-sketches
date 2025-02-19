@@ -28,7 +28,7 @@ void setup()
 
 void loop()
 {
-  // rotates the servo motor from 15 to 165 degrees
+  // rotates the servo motor from start angle to end angle
   for (int i = servoStartAngle; i <= servoEndAngle; i++)
   {
     myServo.write(i);
@@ -40,7 +40,7 @@ void loop()
     Serial.print(distance); // Sends the distance value into the Serial Port
     Serial.print(".");      // Sends addition character right next to the previous value needed later in the Processing IDE for indexing
   }
-  // Repeats the previous lines from 165 to 15 degrees
+  // Repeats the previous lines from end angle to start angle
   for (int i = servoEndAngle; i > servoStartAngle; i--)
   {
     myServo.write(i);
