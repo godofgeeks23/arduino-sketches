@@ -79,7 +79,7 @@ void drawRadar() {
 
 void drawObject() {
   pushMatrix();
-  translate(width/2,height-height*0.074); // moves the starting coordinats to new location
+  translate(width/2,height-height*0.074); // moves the starting coordinates to new location
   strokeWeight(9);
   stroke(255,10,10); // red color
   pixsDistance = iDistance*((height-height*0.1666)*0.025); // covers the distance from the sensor from cm to pixels
