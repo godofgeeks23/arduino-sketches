@@ -22,6 +22,7 @@ void setup()
   Serial.begin(serialBaudRate);
   myServo.attach(servoPin); // Defines on which pin is the servo motor attached
 }
+
 void loop()
 {
   // rotates the servo motor from 15 to 165 degrees
