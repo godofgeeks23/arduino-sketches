@@ -53,7 +53,6 @@ void loop()
 // Function for calculating the distance measured by the Ultrasonic sensor
 int calculateDistance()
 {
-
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
   // Sets the trigPin on HIGH state for 10 micro seconds
