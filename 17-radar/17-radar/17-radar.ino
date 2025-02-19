@@ -1,9 +1,11 @@
 // Includes the Servo library
 #include <Servo.h>.
+
 // Defines Trig and Echo pins of the Ultrasonic Sensor
 const int trigPin = 10;
 const int echoPin = 11;
 const int delayInterval = 25;
+
 // Variables for the duration and the distance
 long duration;
 int distance;
