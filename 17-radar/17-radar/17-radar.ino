@@ -13,6 +13,9 @@ const int serialBaudRate = 9600;
 long duration;
 int distance;
 
+const int servoStartAngle = 15;
+const int servoEndAngle = 165;
+
 Servo myServo; // Creates a servo object for controlling the servo motor
 
 void setup()
@@ -26,7 +29,7 @@ void setup()
 void loop()
 {
   // rotates the servo motor from 15 to 165 degrees
-  for (int i = 15; i <= 165; i++)
+  for (int i = servoStartAngle; i <= servoStartAngle; i++)
   {
     myServo.write(i);
     delay(delayInterval);
