@@ -9,7 +9,7 @@ const int servoPin = 12;
 // define delay interval in ms to set servo rotation speed
 const int delayInterval = 20;
 
-// set baud rate for the serial communication
+// define baud rate for the serial communication
 const int serialBaudRate = 9600;
 
 // define servo start and end angles in degrees
