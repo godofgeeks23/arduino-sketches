@@ -22,6 +22,7 @@ int distance;
 
 Servo myServo; // Creates a servo object for controlling the servo motor
 
+// initialize pin modes, serial and servo
 void setup() {
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
   pinMode(echoPin, INPUT);  // Sets the echoPin as an Input
