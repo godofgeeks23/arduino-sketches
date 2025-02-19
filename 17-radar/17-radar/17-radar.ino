@@ -9,7 +9,9 @@ const int delayInterval = 25;
 // Variables for the duration and the distance
 long duration;
 int distance;
+
 Servo myServo; // Creates a servo object for controlling the servo motor
+
 void setup()
 {
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
