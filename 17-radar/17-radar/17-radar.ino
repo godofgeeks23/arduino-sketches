@@ -49,6 +49,7 @@ void loop()
     Serial.print(".");
   }
 }
+
 // Function for calculating the distance measured by the Ultrasonic sensor
 int calculateDistance()
 {
