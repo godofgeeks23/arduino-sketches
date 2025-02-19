@@ -16,7 +16,7 @@ const int serialBaudRate = 9600;
 const int servoStartAngle = 15;
 const int servoEndAngle = 165;
 
-// Variables for the duration and the distance
+// declare variables for the duration and the distance
 long duration;
 int distance;
 
