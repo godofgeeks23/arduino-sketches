@@ -57,7 +57,7 @@ void serialEvent (Serial myPort) { // starts reading data from the Serial Port
 
 void drawRadar() {
   pushMatrix();
-  translate(width/2,height-height*0.074); // moves the starting coordinats to new location
+  translate(width/2,height-height*0.074); // moves the starting coordinates to new location
   noFill();
   strokeWeight(2);
   stroke(98,245,31);
