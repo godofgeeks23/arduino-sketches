@@ -6,8 +6,8 @@ const int trigPin = 10;
 const int echoPin = 11;
 const int servoPin = 12;
 
-// define delay interval to set servo rotation speed
-const int delayInterval = 5;
+// define delay interval in ms to set servo rotation speed
+const int delayInterval = 20;
 
 // set baud rate for the serial communication
 const int serialBaudRate = 9600;
