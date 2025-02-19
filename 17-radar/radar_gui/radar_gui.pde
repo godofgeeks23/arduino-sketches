@@ -24,14 +24,13 @@ void setup() {
  myPort = new Serial(this, serialInterface, baudRate); // starts the serial communication
  myPort.bufferUntil('.'); // reads the data from the serial port up to the character '.'. So actually it reads this: angle,distance.
 }
+
 void draw() {
-  
   fill(98,245,31);
   // simulating motion blur and slow fade of the moving line
   noStroke();
   fill(0,4); 
   rect(0, 0, width, height-height*0.065); 
-  
   fill(98,245,31); // green color
   // calls the functions for drawing the radar
   drawRadar(); 
@@ -39,6 +38,7 @@ void draw() {
   drawObject();
   drawText();
 }
+
 void serialEvent (Serial myPort) { // starts reading data from the Serial Port
   // reads the data from the Serial Port up to the character '.' and puts it into the String variable "data".
   data = myPort.readStringUntil('.');
@@ -52,6 +52,7 @@ void serialEvent (Serial myPort) { // starts reading data from the Serial Port
   iAngle = int(angle);
   iDistance = int(distance);
 }
+
 void drawRadar() {
   pushMatrix();
   translate(width/2,height-height*0.074); // moves the starting coordinats to new location
@@ -73,6 +74,7 @@ void drawRadar() {
   line((-width/2)*cos(radians(30)),0,width/2,0);
   popMatrix();
 }
+
 void drawObject() {
   pushMatrix();
   translate(width/2,height-height*0.074); // moves the starting coordinats to new location
@@ -86,6 +88,7 @@ void drawObject() {
   }
   popMatrix();
 }
+
 void drawLine() {
   pushMatrix();
   strokeWeight(9);
@@ -94,8 +97,8 @@ void drawLine() {
   line(0,0,(height-height*0.12)*cos(radians(iAngle)),-(height-height*0.12)*sin(radians(iAngle))); // draws the line according to the angle
   popMatrix();
 }
+
 void drawText() { // draws the texts on the screen
-  
   pushMatrix();
   if(iDistance>40) {
   noObject = "Out of Range";
