@@ -4,7 +4,10 @@
 // Defines Trig and Echo pins of the Ultrasonic Sensor
 const int trigPin = 10;
 const int echoPin = 11;
+const int servoPin = 12;
 const int delayInterval = 25;
+
+const int serialBaudRate = 9600;
 
 // Variables for the duration and the distance
 long duration;
@@ -16,8 +19,8 @@ void setup()
 {
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
   pinMode(echoPin, INPUT);  // Sets the echoPin as an Input
-  Serial.begin(9600);
-  myServo.attach(12); // Defines on which pin is the servo motor attached
+  Serial.begin(serialBaudRate);
+  myServo.attach(servoPin); // Defines on which pin is the servo motor attached
 }
 void loop()
 {
