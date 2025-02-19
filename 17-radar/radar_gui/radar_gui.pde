@@ -2,7 +2,7 @@ import processing.serial.*; // imports library for serial communication
 import java.awt.event.KeyEvent; // imports library for reading the data from the serial port
 import java.io.IOException;
 
-Serial myPort; // defines Object Serial
+Serial myPort; // defines Serial object
 
 // defines variables
 String angle="";
@@ -13,7 +13,8 @@ float pixsDistance;
 int iAngle, iDistance;
 int index1=0;
 int index2=0;
-String serialInterface = "/dev/ttyACM0"; // ***CHANGE THIS TO YOUR ARDUINO PORT***
+
+String serialInterface = "/dev/ttyACM0"; // ***CHANGE THIS TO YOUR ARDUINO PORT - can be a COM port for example***
 int baudRate = 9600;
 
 PFont orcFont;
