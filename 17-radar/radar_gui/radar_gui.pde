@@ -100,7 +100,8 @@ void drawLine() {
   popMatrix();
 }
 
-void drawText() { // draws the texts on the screen
+// draws the texts on the screen
+void drawText() { 
   pushMatrix();
   if(iDistance>40) {
   noObject = "Out of Range";
