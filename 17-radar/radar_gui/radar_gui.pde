@@ -19,6 +19,7 @@ int baudRate = 9600;
 
 PFont orcFont;
 
+// intitialize serial communication, and set up the screen
 void setup() {
  size (1200, 700); // ***CHANGE THIS TO YOUR SCREEN RESOLUTION***
  smooth();
