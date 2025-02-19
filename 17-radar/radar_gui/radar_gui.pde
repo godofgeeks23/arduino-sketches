@@ -13,14 +13,15 @@ float pixsDistance;
 int iAngle, iDistance;
 int index1=0;
 int index2=0;
+String serialInterface = "/dev/ttyACM0"; // ***CHANGE THIS TO YOUR ARDUINO PORT***
+int baudRate = 9600;
 
 PFont orcFont;
 
 void setup() {
-  
  size (1200, 700); // ***CHANGE THIS TO YOUR SCREEN RESOLUTION***
  smooth();
- myPort = new Serial(this,"/dev/ttyACM0", 9600); // starts the serial communication
+ myPort = new Serial(this, serialInterface, baudRate); // starts the serial communication
  myPort.bufferUntil('.'); // reads the data from the serial port up to the character '.'. So actually it reads this: angle,distance.
 }
 void draw() {
