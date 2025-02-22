@@ -1,6 +1,6 @@
 # Arduino Sketches
 
-These sketches were executed on a Arduino UNO model.
+These sketches were executed on a Arduino UNO R3 model.
 
 
 ## Useful functions reference
