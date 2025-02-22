@@ -55,6 +55,7 @@ void serialEvent (Serial myPort) { // starts reading data from the Serial Port
   iDistance = int(distance);
 }
 
+// draws the arcs representing the radar
 void drawRadar() {
   pushMatrix();
   translate(width/2,height-height*0.074); // moves the starting coordinates to new location
