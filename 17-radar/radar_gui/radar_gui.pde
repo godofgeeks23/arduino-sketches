@@ -91,6 +91,7 @@ void drawObject() {
   popMatrix();
 }
 
+// function to draw a line from the sensor
 void drawLine() {
   pushMatrix();
   strokeWeight(9);
