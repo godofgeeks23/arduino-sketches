@@ -1,6 +1,6 @@
 import processing.serial.*; // imports library for serial communication
 import java.awt.event.KeyEvent; // imports library for reading the data from the serial port
-import java.io.IOException;
+import java.io.IOException; // imports lib for IO exception handling
 
 Serial myPort; // defines Serial object
 
