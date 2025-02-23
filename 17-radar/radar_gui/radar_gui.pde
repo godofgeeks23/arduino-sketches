@@ -78,6 +78,7 @@ void drawRadar() {
   popMatrix();
 }
 
+// draws the object according to the angle and the distance
 void drawObject() {
   pushMatrix();
   translate(width/2,height-height*0.074); // moves the starting coordinates to new location
