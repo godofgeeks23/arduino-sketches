@@ -21,7 +21,7 @@ PFont orcFont;
 
 // intitialize serial communication, and set up the screen
 void setup() {
- size (1200, 700); // ***CHANGE THIS TO YOUR SCREEN RESOLUTION***
+ size (1200, 700);
  smooth();
  myPort = new Serial(this, serialInterface, baudRate); // starts the serial communication
  myPort.bufferUntil('.'); // reads the data from the serial port up to the character '.'. So actually it reads this: angle,distance.
