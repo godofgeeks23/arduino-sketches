@@ -31,16 +31,16 @@ void setup() {
 }
 
 void loop() {
-  // rotates the servo motor from start angle to end angle
+  // rotate the servo motor from start angle to end angle
   for (int i = servoStartAngle; i <= servoEndAngle; i++) {
     myServo.write(i);
     delay(delayInterval);
-    distance = calculateDistance(); // Calls a function for calculating the distance measured by the Ultrasonic sensor for each degree
+    distance = calculateDistance(); // Call a function for calculating the distance measured by the Ultrasonic sensor for each degree
     // print info on the serial monitor
-    Serial.print(i);        // Sends the current degree into the Serial Port
-    Serial.print(",");      // Sends addition character right next to the previous value needed later in the Processing IDE for indexing
-    Serial.print(distance); // Sends the distance value into the Serial Port
-    Serial.print(".");      // Sends addition character right next to the previous value needed later in the Processing IDE for indexing
+    Serial.print(i);        // Send the current degree into the Serial Port
+    Serial.print(",");      // Send addition character right next to the previous value needed later in the Processing IDE for indexing
+    Serial.print(distance); // Send the distance value into the Serial Port
+    Serial.print(".");      // Send addition character right next to the previous value needed later in the Processing IDE for indexing
   }
   // Repeats the previous lines from end angle to start angle
   for (int i = servoEndAngle; i > servoStartAngle; i--) {
