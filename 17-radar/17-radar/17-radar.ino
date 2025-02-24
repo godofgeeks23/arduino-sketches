@@ -42,7 +42,7 @@ void loop() {
     Serial.print(distance); // Send the distance value into the Serial Port
     Serial.print(".");      // Send addition character right next to the previous value needed later in the Processing IDE for indexing
   }
-  // Repeats the previous lines from end angle to start angle
+  // Repeat the previous lines from end angle to start angle
   for (int i = servoEndAngle; i > servoStartAngle; i--) {
     myServo.write(i);
     delay(delayInterval);
