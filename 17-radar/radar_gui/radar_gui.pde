@@ -103,7 +103,7 @@ void drawLine() {
   popMatrix();
 }
 
-// draws the texts on the screen
+// draws the text on the screen
 void drawText() { 
   pushMatrix();
   if(iDistance>40) {
