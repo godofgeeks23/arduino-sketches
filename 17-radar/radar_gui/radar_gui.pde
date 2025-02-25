@@ -14,7 +14,7 @@ int iAngle, iDistance;
 int index1=0;
 int index2=0;
 
-String serialInterface = "/dev/ttyACM0"; // ***CHANGE THIS TO YOUR ARDUINO PORT - can be a COM port for example (on windows)***
+String serialInterface = "/dev/ttyACM0"; // ***CHANGE THIS TO YOUR ARDUINO PORT - can be a COM port for example (on windows) or /dev/ttyACM0 on linux***
 int baudRate = 9600;
 
 PFont orcFont;
