@@ -104,7 +104,8 @@ void drawLine() {
 }
 
 // draws the text on the screen
-void drawText() { 
+void drawText() {
+  // start drawing text 
   pushMatrix();
   if(iDistance>40) {
     noObject = "Out of Range";
