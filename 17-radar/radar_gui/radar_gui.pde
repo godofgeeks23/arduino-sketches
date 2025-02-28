@@ -132,23 +132,23 @@ void drawText() {
   }
   textSize(25);
   fill(98,245,60);
-  translate((width-width*0.4994)+width/2*cos(radians(30)),(height-height*0.0907)-width/2*sin(radians(30)));
+  translate((width-width*0.4994)+width/2*cos(radians(30)), (height-height*0.0907)-width/2*sin(radians(30)));
   rotate(-radians(-60));
   text("30 ",0,0);
   resetMatrix();
-  translate((width-width*0.503)+width/2*cos(radians(60)),(height-height*0.0888)-width/2*sin(radians(60)));
+  translate((width-width*0.503)+width/2*cos(radians(60)), (height-height*0.0888)-width/2*sin(radians(60)));
   rotate(-radians(-30));
   text("60 ",0,0);
   resetMatrix();
-  translate((width-width*0.507)+width/2*cos(radians(90)),(height-height*0.0833)-width/2*sin(radians(90)));
+  translate((width-width*0.507)+width/2*cos(radians(90)), (height-height*0.0833)-width/2*sin(radians(90)));
   rotate(radians(0));
   text("90 ",0,0);
   resetMatrix();
-  translate(width-width*0.513+width/2*cos(radians(120)),(height-height*0.07129)-width/2*sin(radians(120)));
+  translate(width-width*0.513+width/2*cos(radians(120)), (height-height*0.07129)-width/2*sin(radians(120)));
   rotate(radians(-30));
   text("120 ",0,0);
   resetMatrix();
-  translate((width-width*0.5104)+width/2*cos(radians(150)),(height-height*0.0574)-width/2*sin(radians(150)));
+  translate((width-width*0.5104)+width/2*cos(radians(150)), (height-height*0.0574)-width/2*sin(radians(150)));
   rotate(radians(-60));
   text("150 ",0,0);
   popMatrix(); 
