@@ -98,7 +98,7 @@ void drawLine() {
   pushMatrix();  // starting a new drawing state
   strokeWeight(9);
   stroke(30,250,60);
-  translate(width/2,height-height*0.074); // moves the starting coordinates to new location
+  translate(width/2, height-height*0.074); // moves the starting coordinates to new location
   line(0, 0, (height-height*0.12)*cos(radians(iAngle)), -(height-height*0.12)*sin(radians(iAngle))); // draws the line according to the angle
   popMatrix(); // restores the previous drawing state
 }
