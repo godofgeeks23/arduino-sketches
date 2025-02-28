@@ -116,7 +116,7 @@ void drawText() {
   fill(0,0,0);
   noStroke();
   rect(0, height-height*0.0648, width, height);
-  fill(98,245,31);
+  fill(98, 245, 31);
   textSize(25);
   
   text("10 cms", width-width*0.3854, height-height*0.0833);
