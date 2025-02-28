@@ -69,19 +69,19 @@ void drawRadar() {
   arc(0,0,(width-width*0.687),(width-width*0.687),PI,TWO_PI);
   // draws the angle lines
   line(-width/2,0,width/2,0);
-  line(0,0,(-width/2)*cos(radians(30)),(-width/2)*sin(radians(30)));
-  line(0,0,(-width/2)*cos(radians(60)),(-width/2)*sin(radians(60)));
-  line(0,0,(-width/2)*cos(radians(90)),(-width/2)*sin(radians(90)));
-  line(0,0,(-width/2)*cos(radians(120)),(-width/2)*sin(radians(120)));
-  line(0,0,(-width/2)*cos(radians(150)),(-width/2)*sin(radians(150)));
-  line((-width/2)*cos(radians(30)),0,width/2,0);
+  line(0, 0, (-width/2)*cos(radians(30)), (-width/2)*sin(radians(30)));
+  line(0, 0, (-width/2)*cos(radians(60)), (-width/2)*sin(radians(60)));
+  line(0, 0, (-width/2)*cos(radians(90)), (-width/2)*sin(radians(90)));
+  line(0, 0, (-width/2)*cos(radians(120)), (-width/2)*sin(radians(120)));
+  line(0, 0, (-width/2)*cos(radians(150)), (-width/2)*sin(radians(150)));
+  line((-width/2)*cos(radians(30)), 0, width/2, 0);
   popMatrix();
 }
 
 // draws the object according to the angle and the distance
 void drawObject() {
   pushMatrix();
-  translate(width/2,height-height*0.074); // moves the starting coordinates to new location
+  translate(width/2, height-height*0.074); // moves the starting coordinates to new location
   strokeWeight(9);
   stroke(255,10,10); // red color
   pixsDistance = iDistance*((height-height*0.1666)*0.025); // converts the distance from the sensor from cm to pixels
