@@ -88,7 +88,7 @@ void drawObject() {
   // limiting the range to 40 cms
   if(iDistance<40){
     // draws the object according to the angle and the distance
-    line(pixsDistance*cos(radians(iAngle)),-pixsDistance*sin(radians(iAngle)),(width-width*0.505)*cos(radians(iAngle)),-(width-width*0.505)*sin(radians(iAngle)));
+    line(pixsDistance*cos(radians(iAngle)), -pixsDistance*sin(radians(iAngle)), (width-width*0.505)*cos(radians(iAngle)), -(width-width*0.505)*sin(radians(iAngle)));
   }
   popMatrix();
 }
