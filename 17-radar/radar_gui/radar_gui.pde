@@ -113,7 +113,7 @@ void drawText() {
   else {
     noObject = "In Range";
   }
-  fill(0,0,0);
+  fill(0, 0, 0);
   noStroke();
   rect(0, height-height*0.0648, width, height);
   fill(98, 245, 31);
