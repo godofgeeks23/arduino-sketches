@@ -7,7 +7,7 @@ Collection of sketches that were executed on a (Arduino compatible) UNO R3 board
 
 ```
 setup() # Setup function
-loop()  # Main
+loop()  # Main function 
 pinMode(<int>, <int>) # Pin: 13, Mode: OUTPUT
 digitalWrite(<int>, <int>) # Pin: 13, Value: HIGH
 delay(<int>) # Time: 1000ms
