@@ -1,6 +1,6 @@
 # Arduino Sketches
 
-These sketches were executed on a (Arduino compatible) UNO R3 board.
+Collection of sketches that were executed on a (Arduino compatible) UNO R3 board.
 
 
 ## Useful functions reference
