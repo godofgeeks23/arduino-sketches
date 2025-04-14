@@ -62,11 +62,13 @@ void drawRadar() {
   noFill();
   strokeWeight(2);
   stroke(98,245,31);
+  
   // draws the arc lines
   arc(0,0,(width-width*0.0625),(width-width*0.0625),PI,TWO_PI);
   arc(0,0,(width-width*0.27),(width-width*0.27),PI,TWO_PI);
   arc(0,0,(width-width*0.479),(width-width*0.479),PI,TWO_PI);
   arc(0,0,(width-width*0.687),(width-width*0.687),PI,TWO_PI);
+
   // draws the angle lines
   line(-width/2,0,width/2,0);
   line(0, 0, (-width/2)*cos(radians(30)), (-width/2)*sin(radians(30)));
