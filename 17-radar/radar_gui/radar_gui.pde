@@ -29,11 +29,13 @@ void setup() {
 
 void draw() {
   fill(98,245,31);
+
   // simulating motion blur and slow fade of the moving line
   noStroke();
   fill(0,4); 
   rect(0, 0, width, height-height*0.065); 
   fill(98,245,31); // green color
+  
   // calls the functions for drawing the radar
   drawRadar(); 
   drawLine();
@@ -62,7 +64,7 @@ void drawRadar() {
   noFill();
   strokeWeight(2);
   stroke(98,245,31);
-  
+
   // draws the arc lines
   arc(0,0,(width-width*0.0625),(width-width*0.0625),PI,TWO_PI);
   arc(0,0,(width-width*0.27),(width-width*0.27),PI,TWO_PI);
