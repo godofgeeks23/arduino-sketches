@@ -132,7 +132,6 @@ void drawText() {
   text("30 cms", width-width*0.177, height-height*0.0833);
   text("40 cms", width-width*0.0729, height-height*0.0833);
   textSize(40);
-  text("godofgeeks", width-width*0.875, height-height*0.0277);
   text("Angle: " + iAngle +"  ", width-width*0.48, height-height*0.0277);
   text("Distance: ", width-width*0.26, height-height*0.0277);
   if(iDistance<rangeLimit) {
