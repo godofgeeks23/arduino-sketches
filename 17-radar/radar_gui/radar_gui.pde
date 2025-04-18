@@ -93,7 +93,6 @@ void drawObject() {
   strokeWeight(9);
   stroke(255,10,10); // red color
   pixsDistance = iDistance*((height-height*0.1666)*0.025); // converts the distance from the sensor from cm to pixels
-  // limiting the range to 40 cms
   if(iDistance<rangeLimit){
     // draws the object according to the angle and the distance
     line(pixsDistance*cos(radians(iAngle)), -pixsDistance*sin(radians(iAngle)), (width-width*0.505)*cos(radians(iAngle)), -(width-width*0.505)*sin(radians(iAngle)));
