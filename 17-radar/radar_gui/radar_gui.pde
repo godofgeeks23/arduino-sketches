@@ -102,8 +102,7 @@ void drawObject() {
 
 // function to draw a line from the sensor
 void drawLine() {
-  // starting a new drawing state
-  pushMatrix();
+  pushMatrix(); // starting a new drawing state
   strokeWeight(9);
   stroke(30,250,60);
   translate(width/2, height-height*0.074); // moves the starting coordinates to new location
