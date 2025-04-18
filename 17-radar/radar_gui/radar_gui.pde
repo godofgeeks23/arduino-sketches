@@ -15,6 +15,7 @@ int index1=0;
 int index2=0;
 int canvasWidth=1200;
 int canvasHeight=700;
+int rangeLimit=40; // the range limit of the sensor in cms
 
 String serialInterface = "/dev/ttyACM0"; // ***CHANGE THIS TO YOUR ARDUINO PORT - can be a COM port (for example on windows) or /dev/ttyACM0 (on linux)***
 int baudRate = 9600;
@@ -93,7 +94,7 @@ void drawObject() {
   stroke(255,10,10); // red color
   pixsDistance = iDistance*((height-height*0.1666)*0.025); // converts the distance from the sensor from cm to pixels
   // limiting the range to 40 cms
-  if(iDistance<40){
+  if(iDistance<rangeLimit){
     // draws the object according to the angle and the distance
     line(pixsDistance*cos(radians(iAngle)), -pixsDistance*sin(radians(iAngle)), (width-width*0.505)*cos(radians(iAngle)), -(width-width*0.505)*sin(radians(iAngle)));
   }
@@ -115,7 +116,7 @@ void drawLine() {
 void drawText() {
   // start drawing text 
   pushMatrix();
-  if(iDistance>40) {
+  if(iDistance>rangeLimit) {
     noObject = "Out of Range";
   }
   else {
@@ -135,7 +136,7 @@ void drawText() {
   text("godofgeeks", width-width*0.875, height-height*0.0277);
   text("Angle: " + iAngle +"  ", width-width*0.48, height-height*0.0277);
   text("Distance: ", width-width*0.26, height-height*0.0277);
-  if(iDistance<40) {
+  if(iDistance<rangeLimit) {
     text("        " + iDistance +" cms", width-width*0.225, height-height*0.0277);
   }
   textSize(25);
