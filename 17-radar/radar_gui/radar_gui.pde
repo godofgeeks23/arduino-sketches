@@ -13,6 +13,8 @@ float pixsDistance;
 int iAngle, iDistance;
 int index1=0;
 int index2=0;
+int canvasWidth=1200;
+int canvasHeight=700;
 
 String serialInterface = "/dev/ttyACM0"; // ***CHANGE THIS TO YOUR ARDUINO PORT - can be a COM port (for example on windows) or /dev/ttyACM0 (on linux)***
 int baudRate = 9600;
@@ -21,7 +23,7 @@ PFont orcFont;
 
 // intitialize serial communication, and set up the screen
 void setup() {
- size (1200, 700);
+ size(canvasWidth, canvasHeight);
  smooth();
  myPort = new Serial(this, serialInterface, baudRate); // starts the serial communication
  myPort.bufferUntil('.'); // reads the data from the serial port up to the character '.'. So actually it reads this: angle,distance.
