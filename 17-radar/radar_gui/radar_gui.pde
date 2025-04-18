@@ -45,7 +45,8 @@ void draw() {
   drawText();
 }
 
-void serialEvent (Serial myPort) { // starts reading data from the Serial Port
+// starts reading data from the Serial Port
+void serialEvent (Serial myPort) { 
   // reads the data from the Serial Port up to the character '.' and puts it into the String variable "data".
   data = myPort.readStringUntil('.');
   data = data.substring(0,data.length()-1);
