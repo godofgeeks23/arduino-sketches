@@ -3,6 +3,7 @@ import java.awt.event.KeyEvent; // imports library for reading the data from the
 import java.io.IOException; // imports lib for IO exception handling
 
 Serial myPort; // define Serial object
+PFont orcFont; // define font object
 
 // define variables
 String angle="";
@@ -19,8 +20,6 @@ int rangeLimit=40; // the range limit of the sensor in cms
 
 String serialInterface = "/dev/ttyACM0"; // ***CHANGE THIS TO YOUR ARDUINO PORT - can be a COM port (for example on windows) or /dev/ttyACM0 (on linux)***
 int baudRate = 9600;
-
-PFont orcFont;
 
 // intitialize serial communication, and set up the screen
 void setup() {
@@ -138,7 +137,7 @@ void drawText() {
   if(iDistance<rangeLimit) {
     text("        " + iDistance +" cms", width-width*0.225, height-height*0.0277);
   }
-  
+
   textSize(25);
   fill(98, 245, 60);
   translate((width-width*0.4994)+width/2*cos(radians(30)), (height-height*0.0907)-width/2*sin(radians(30)));
