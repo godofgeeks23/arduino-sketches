@@ -138,6 +138,7 @@ void drawText() {
   if(iDistance<rangeLimit) {
     text("        " + iDistance +" cms", width-width*0.225, height-height*0.0277);
   }
+  
   textSize(25);
   fill(98, 245, 60);
   translate((width-width*0.4994)+width/2*cos(radians(30)), (height-height*0.0907)-width/2*sin(radians(30)));
