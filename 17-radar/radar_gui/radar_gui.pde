@@ -91,7 +91,7 @@ void drawObject() {
   pushMatrix();
   translate(width/2, height-height*0.074); // moves the starting coordinates to new location
   strokeWeight(9);
-  stroke(255,10,10); // red color
+  stroke(255,10,10); // set line to red color
   pixsDistance = iDistance*((height-height*0.1666)*0.025); // converts the distance from the sensor from cm to pixels
   if(iDistance<rangeLimit){
     // draws the object according to the angle and the distance
