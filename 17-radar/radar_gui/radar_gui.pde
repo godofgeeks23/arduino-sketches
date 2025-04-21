@@ -53,7 +53,7 @@ void serialEvent (Serial myPort) {
   
   index1 = data.indexOf(",");
   angle= data.substring(0, index1); // value of the angle the Arduino Board sent into the Serial Port
-  distance= data.substring(index1+1, data.length()); //
+  distance= data.substring(index1+1, data.length());
   
   // converts the String variables into Integer
   iAngle = int(angle);
