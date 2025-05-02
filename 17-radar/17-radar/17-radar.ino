@@ -6,7 +6,7 @@ const int trigPin = 10;
 const int echoPin = 11;
 const int servoPin = 12;
 
-// define delay interval in ms to set servo rotation speed
+// define delay interval (in ms) to set servo rotation speed
 const int delayInterval = 20;
 
 // define baud rate for the serial communication
@@ -23,16 +23,19 @@ int distance;
 Servo myServo; // Creates a servo object for controlling the servo motor
 
 // initialize pin modes, serial and servo
-void setup() {
+void setup()
+{
   pinMode(trigPin, OUTPUT); // Set the trigPin as an Output
   pinMode(echoPin, INPUT);  // Set the echoPin as an Input
   Serial.begin(serialBaudRate);
   myServo.attach(servoPin); // Define on which pin is the servo motor attached
 }
 
-void loop() {
+void loop()
+{
   // rotate the servo motor from start angle to end angle
-  for (int i = servoStartAngle; i <= servoEndAngle; i++) {
+  for (int i = servoStartAngle; i <= servoEndAngle; i++)
+  {
     myServo.write(i);
     delay(delayInterval);
     distance = calculateDistance(); // Call a function for calculating the distance measured by the Ultrasonic sensor for each degree
@@ -43,7 +46,8 @@ void loop() {
     Serial.print(".");      // Send addition character right next to the previous value needed later in the Processing IDE for indexing
   }
   // Repeat the previous lines from end angle to start angle
-  for (int i = servoEndAngle; i > servoStartAngle; i--) {
+  for (int i = servoEndAngle; i > servoStartAngle; i--)
+  {
     myServo.write(i);
     delay(delayInterval);
     distance = calculateDistance();
@@ -55,7 +59,8 @@ void loop() {
 }
 
 // Function for calculating the distance measured by the Ultrasonic sensor
-int calculateDistance() {
+int calculateDistance()
+{
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
   // Set the trigPin on HIGH state for 10 micro seconds
