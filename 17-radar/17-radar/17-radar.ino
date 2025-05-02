@@ -12,7 +12,7 @@ const int delayInterval = 20;
 // define baud rate for the serial communication
 const int serialBaudRate = 9600;
 
-// define servo start and end angles in degrees
+// define servo start and end angles (in degrees)
 const int servoStartAngle = 15;
 const int servoEndAngle = 165;
 
