@@ -38,7 +38,7 @@ void loop()
   {
     myServo.write(i);
     delay(delayInterval);
-    distance = calculateDistance(); // Call a function for calculating the distance measured by the Ultrasonic sensor for each degree
+    distance = calculateDistance(); // calculating the distance measured by the Ultrasonic sensor for each degree
     // print info on the serial monitor
     Serial.print(i);        // Send the current degree into the Serial Port
     Serial.print(",");      // Send addition character right next to the previous value needed later in the Processing IDE for indexing
