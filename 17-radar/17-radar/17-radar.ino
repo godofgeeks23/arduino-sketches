@@ -1,9 +1,11 @@
 // Include the Servo library
 #include <Servo.h>.
 
-// Defines trig and echo pins of the Ultrasonic Sensor, and pin for servo motor
+// Defines trig and echo pins of the Ultrasonic Sensor
 const int trigPin = 10;
 const int echoPin = 11;
+
+// Defines the pin for the servo motor
 const int servoPin = 12;
 
 // delay interval (in ms) to set servo rotation speed
